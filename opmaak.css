@@ -1,8 +1,10 @@
 
-body {
+html, body {
     background-image: url('IMG20200211204911.jpg');
     background-size: cover;
     background-position: center 30%;
+    height: auto;
+    overflow: auto;
 }
 
 div.site {
@@ -14,7 +16,7 @@ div.site {
 
 div.head {
     width: 100%;
-    height: auto;
+    height: 100%;
 }
 
 div.content {
@@ -34,7 +36,7 @@ div.insta {
 div.footer {
     width: 100%;
     height: auto;
-    position: relative;
+    position: bottom;
     bottom: 0;
     background-color: gray;
 }
@@ -43,16 +45,16 @@ div.footer {
 .logo{
     width: 30%;
     position: relative;
-    left: 35%;
-    top: 50px;
+    top: 40%;
 }
 
 h1 {
     width: 30%;
-    position: relative;
-    left: 35%;
+    position: absolute;
+    left: 70%;
     margin-top: 3%;
     color: white;
+    top: 40%;
 }
 
 p{
