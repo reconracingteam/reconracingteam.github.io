@@ -1,44 +1,46 @@
-
 html, body {
-    background-image: url('IMG20200211204911.jpg');
-    background-size: cover;
-    background-position: center 30%;
     height: auto;
     overflow: auto;
+    margin: 0;
+    scroll-behavior: smooth;
 }
 
-div.site {
-    position: absolute;
-    width: 70%;
-    left: 15%;
-    height: 100%;
+.head {
+    height: 100vh;
+    background-image: url('IMG20200211204911.jpg');
+    background-size: cover;
+    background-position: center 50%;
 }
 
-div.head {
-    width: 100%;
-    height: 100%;
+.wij {
+    height: 100vh;
+    background-color: rgb(47, 47, 47);
+    color: white;
 }
 
-div.content {
-    width: 100%;
-    height: auto;
-    margin-top: 20px;
-    background-color: hsla(0, 11%, 81%, 0.63);
-    border-radius: 17px;
+.sem {
+    height: 100vh;
+    background-color: rgb(93, 93, 93);
+    color: white;
 }
 
-div.insta {
-    background-color: hsla(0, 11%, 81%, 0.63);
-    border-radius: 17px;
+.insta {
+    background-color: rgb(143, 137, 137);
+    height: 100vh;
+    color: white;
+}
+
+.sponsoren{
+    height: 100vh;
+    background-color: rgb(24, 26, 27);
+    color: white;
 }
 
 
-div.footer {
-    width: 100%;
-    height: auto;
-    position: bottom;
-    bottom: 0;
-    background-color: gray;
+.footer {
+    height: 100vh;
+    background-color: rgb(47, 47, 47);
+    color: white;
 }
 
 
@@ -46,6 +48,7 @@ div.footer {
     width: 30%;
     position: relative;
     top: 40%;
+    left: 8%;
 }
 
 h1 {
@@ -59,5 +62,66 @@ h1 {
 
 p{
     padding: 10px;
-    color: black;
+    margin: 0;
+}
+
+
+div.arrow {
+	width: 6vmin;
+	height: 6vmin;
+	box-sizing: border-box;
+    position: absolute;
+    left:95vh;
+	top: 90vh;
+	transform: rotate(135deg);
+}
+
+div.arrow:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    border-width: .8vmin .8vmin 0 0;
+    border-style: solid;
+    border-color: #fafafa;
+    transition: .2s ease;
+    display: block;
+    transform-origin: 100% 0;
+}
+
+
+div.arrow:after {
+    content: '';
+    float: left;
+    position: relative;
+    top: -100%;
+    width: 100%;
+    height: 100%;
+    border-width: 0 .8vmin 0 0;
+    border-style: solid;
+    border-color: #fafafa;
+    transform-origin: 100% 0;
+    transition:.2s ease;
+}
+
+div.arrow:hover:after {
+    transform: rotate(45deg);
+    border-color: orange;
+    height: 120%;
+}
+div.arrow:hover:before {
+    border-color: orange;
+    transform: scale(.9);
+
+}
+
+div.arrow.a2{
+    top: 190vh;
+}
+
+div.arrow.a3{
+    top:290vh;
+}
+
+div.arrow.a4{
+    top: 390vh;
 }
