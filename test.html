@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <style>
+            html, body {
+                height: 100vh;
+                overflow: hidden;
+                overflow: scroll;
+                height: 100vh;
+                scroll-snap-type: mandatory;
+                scroll-snap-points-y: repeat(100vh);
+                scroll-snap-type: y mandatory;
+            }
+
+            section {
+            height: 100vh;
+            scroll-snap-align: start;
+            /* position: relative; */
+            }
+
+            .one {
+                background-color: red;
+            }
+            .two {
+                background-color: blue;
+            }
+            .three {
+                background-color: grey;
+            }
+            .four {
+                background-color: green;
+            }
+        </style>
+    </head>
+    <body>
+        <section class="one">
+        </section>
+        <section class="two">
+        </section>
+        <section class="three">
+        </section>
+        <section class="four">
+        </section>
+    </body>
+</html>
