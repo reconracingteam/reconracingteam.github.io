@@ -4,6 +4,7 @@ html {
     overflow-x: hidden;
     overflow-y: scroll;
     height: 100vh;
+    scroll-behavior: smooth;
     /* scroll-snap-type: mandatory; */
     scroll-snap-points-y: repeat(100vh);
     scroll-snap-type: y mandatory;
@@ -51,13 +52,14 @@ section{
     left: 8%;
 }
 
-.head.h1 {
+h1 {
     width: 30%;
     position: absolute;
-    left: 70%;
+    left: 60%;
     margin-top: 3%;
     color: white;
     top: 40%;
+    font-size: 5vh;
 }
 
 p{
@@ -115,7 +117,7 @@ div.arrow:hover:before {
 
 }
 
-/* div.arrow.a2{
+div.arrow.a2{
     top: 190vh;
 }
 
@@ -125,4 +127,4 @@ div.arrow.a3{
 
 div.arrow.a4{
     top: 390vh;
-} */
+}
