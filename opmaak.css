@@ -10,6 +10,12 @@ html {
     scroll-snap-type: y mandatory;
 }
 
+@media (max-width: 400px){
+    html{
+        scroll-snap-type: y proximity;
+    }
+}
+
 body{
     margin:0;
 }
@@ -20,28 +26,84 @@ section{
     scroll-snap-align: start;
     margin: 0;
 }
-
 .head {
-    /* height: 100vh; */
     background-image: url('IMG20200211204911.jpg');
     background-size: cover;
     background-position: center 50%;
 }
-
 .wij {
     background-color: rgb(47, 47, 47);
 }
-
 .sem{
-    background-color: rgb(93, 93, 93);
+    /* background-color: rgb(93, 93, 93); */
+    background-image: url('background.png');
+    background-size: cover;
+    background-position: center 50%;
 }
-
 .insta {
     background-color: rgb(143, 137, 137);
 }
-
 .sponsoren{
     background-color: rgb(24, 26, 27);
+}
+
+div.deel1{
+    position: relative;
+    width: 30%;
+    top: 10%;
+    left: 5%;
+    border: solid;
+    border-color: white;
+    border-radius: 5px;
+}
+div.deel2{
+    position: relative;
+    left: 50%;
+    width: auto;
+}
+
+
+div.footer{
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    background-color: grey;
+    top: 86vh;
+    height: 10vh;
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
+}
+div.right{
+    /* position: absolute; */
+    /* left: 75%;
+    top: 30%; */
+    color: black;
+    text-align: center;
+}
+div.center{
+    /* position: absolute;
+    top: 30%; */
+    color: black;
+    /* left: 50%; */
+    text-align: center;
+}
+div.left{
+    /* position: absolute; */
+    text-align: center;
+}
+
+a.mail{
+    padding: 5px;
+    top:30%;
+    position: absolute;
+    border: solid;
+    border-color: black;
+    background-color: darkgrey;
+    color: black;
+    text-decoration: none;
+}
+a.mail:hover{
+    background-color: rgb(95, 94, 94);
 }
 
 
@@ -65,6 +127,10 @@ h1 {
 p{
     padding: 10px;
     margin: 0;
+    font-size: large;
+}
+p.pfooter{
+    padding-top: 30px;
 }
 
 
@@ -78,7 +144,6 @@ div.arrow {
     transform: rotate(135deg);
     margin: 0;
 }
-
 div.arrow:before {
     content: '';
     width: 100%;
@@ -90,8 +155,6 @@ div.arrow:before {
     display: block;
     transform-origin: 100% 0;
 }
-
-
 div.arrow:after {
     content: '';
     float: left;
@@ -105,7 +168,6 @@ div.arrow:after {
     transform-origin: 100% 0;
     transition:.2s ease;
 }
-
 div.arrow:hover:after {
     transform: rotate(45deg);
     border-color: orange;
@@ -130,9 +192,3 @@ div.arrow.a4{
 }
 
 
-
-@media (max-width: 400px){
-    html{
-        scroll-snap-type: y proximity;
-    }
-}
