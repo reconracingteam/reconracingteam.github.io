@@ -70,32 +70,26 @@ div.footer{
     background-color: grey;
     top: 86vh;
     height: 10vh;
-    display: inline-grid;
-    grid-template-columns: auto auto auto;
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-auto-flow: column;
 }
 div.right{
-    /* position: absolute; */
-    /* left: 75%;
-    top: 30%; */
     color: black;
     text-align: center;
 }
 div.center{
-    /* position: absolute;
-    top: 30%; */
     color: black;
-    /* left: 50%; */
     text-align: center;
 }
 div.left{
-    /* position: absolute; */
     text-align: center;
 }
 
 a.mail{
     padding: 5px;
-    top:30%;
-    position: absolute;
+    top:35%;
+    position: relative;
     border: solid;
     border-color: black;
     background-color: darkgrey;
