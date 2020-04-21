@@ -20,6 +20,7 @@ body{
     margin:0;
 }
 
+/* Sections */
 section{
     height: 100vh;
     color: white;
@@ -46,7 +47,6 @@ section{
 .sponsoren{
     background-color: rgb(24, 26, 27);
 }
-
 div.deel1{
     position: relative;
     width: 30%;
@@ -61,8 +61,18 @@ div.deel2{
     left: 50%;
     width: auto;
 }
+div.deel3{
+    position: relative;
+    width: 30%;
+    top: 15%;
+    left: 60%;
+    border: solid;
+    border-color: white;
+    border-radius: 5px;
+    background-color: #bdbcbc80;
+}
 
-
+/* Footer */
 div.footer{
     width: 100%;
     position: relative;
@@ -100,14 +110,13 @@ a.mail:hover{
     background-color: rgb(95, 94, 94);
 }
 
-
+/* Opmaak fonts en afbeeldingen */
 .logo{
     width: 30%;
     position: relative;
     top: 40%;
     left: 8%;
 }
-
 h1 {
     width: 30%;
     position: absolute;
@@ -117,7 +126,6 @@ h1 {
     top: 40%;
     font-size: 5vh;
 }
-
 p{
     padding: 10px;
     margin: 0;
@@ -127,7 +135,7 @@ p.pfooter{
     padding-top: 30px;
 }
 
-
+/* Arrows */
 div.arrow {
 	width: 6vmin;
 	height: 6vmin;
@@ -170,17 +178,13 @@ div.arrow:hover:after {
 div.arrow:hover:before {
     border-color: orange;
     transform: scale(.9);
-
 }
-
 div.arrow.a2{
     top: 190vh;
 }
-
 div.arrow.a3{
     top:290vh;
 }
-
 div.arrow.a4{
     top: 390vh;
 }
