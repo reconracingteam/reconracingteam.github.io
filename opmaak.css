@@ -73,7 +73,7 @@ div.arrow {
 	height: 6vmin;
 	box-sizing: border-box;
     position: absolute;
-    left:95vh;
+    left:49%;
 	top: 90vh;
     transform: rotate(135deg);
     margin: 0;
@@ -127,4 +127,12 @@ div.arrow.a3{
 
 div.arrow.a4{
     top: 390vh;
+}
+
+
+
+@media (max-width: 400px){
+    html{
+        scroll-snap-type: y proximity;
+    }
 }
