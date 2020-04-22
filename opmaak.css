@@ -1,11 +1,9 @@
 html {
-    /* margin: 0; */
     height: 100vh;
     overflow-x: hidden;
     overflow-y: scroll;
     height: 100vh;
     scroll-behavior: smooth;
-    /* scroll-snap-type: mandatory; */
     scroll-snap-points-y: repeat(100vh);
     scroll-snap-type: y mandatory;
 }
@@ -36,7 +34,6 @@ section{
     background-color: rgb(47, 47, 47);
 }
 .sem{
-    /* background-color: rgb(93, 93, 93); */
     background-image: url('background.png');
     background-size: cover;
     background-position: center 50%;
@@ -132,7 +129,7 @@ p{
     font-size: large;
 }
 p.pfooter{
-    padding-top: 30px;
+    padding-top: 35px;
 }
 
 /* Arrows */
