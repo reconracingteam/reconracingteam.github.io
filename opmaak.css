@@ -169,6 +169,7 @@ div.arrow:after {
 }
 div.arrow:hover:after {
     transform: rotate(45deg);
+    right: 2px;
     border-color: orange;
     height: 120%;
 }
