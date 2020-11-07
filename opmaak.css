@@ -45,6 +45,8 @@ section{
     background-image: url('grasAuto.jpg');
     background-size: cover;
     background-position: top 30%;
+    color: black;
+    font-size: 27px;
     /* background-color: rgb(24, 26, 27); */
 }
 div.deel1{
@@ -75,11 +77,13 @@ div.deel3{
 /* Footer */
 div.footer{
     width: 100%;
-    position: relative;
-    bottom: 0;
+    /* position: relative; */
+    margin-top: 10vh;
+    /* bottom: 0px; */
     background-color: grey;
-    top: 86vh;
-    height: 10vh;
+    /* top: 86vh; */
+    min-height: 15%;
+    max-height: 100vh;
     display: grid;
     grid-auto-columns: 1fr;
     grid-auto-flow: column;
@@ -98,7 +102,7 @@ div.left{
 
 a.mail{
     padding: 5px;
-    top:35%;
+    top:35px;
     position: relative;
     border: solid;
     border-color: black;
@@ -131,8 +135,11 @@ p{
     margin: 0;
     font-size: large;
 }
-p.pfooter{
+p.pfooter {
     padding-top: 35px;
+}
+p.sponsoren {
+    color: black;
 }
 
 /* Arrows */
