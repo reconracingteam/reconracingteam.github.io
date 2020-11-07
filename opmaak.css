@@ -42,7 +42,10 @@ section{
     background-color: rgb(143, 137, 137);
 }
 .sponsoren{
-    background-color: rgb(24, 26, 27);
+    background-image: url('grasAuto.jpg');
+    background-size: cover;
+    background-position: top 30%;
+    /* background-color: rgb(24, 26, 27); */
 }
 div.deel1{
     position: relative;
